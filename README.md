@@ -14,8 +14,10 @@
     <a href="#"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://www.npmjs.com/package/lightfetch-node">View Package on NPM</a>·
-    <a href="https://github.com/RayhanADev/lightfetch/issues">Report Bug</a>·
+    <a href="https://www.npmjs.com/package/lightfetch-node">View Package on NPM</a>
+		·
+    <a href="https://github.com/RayhanADev/lightfetch/issues">Report Bug</a>
+		·
     <a href="https://github.com/RayhanADev/lightfetch/issues">Request Feature</a>
   </p>
 </p>
