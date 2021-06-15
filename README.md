@@ -1,10 +1,24 @@
 > This project is a **Work in Progress** and currently in development. The API is
 > subject to change without warning.
 
-# 🌠 lightfetch 🌠
+<p align="center">
+  <a href="https://github.com/RayhanADev/lightfetch">
+    <img src="images/lightfetch.png" alt="lightfetch-splash" width="600" height="200">
+  </a>
 
-A small requests package for dirt simple usages. None of that overcomplicated stuff.
-Built using **zero dependencies** to be **lightweight** and **asynchronous**.
+  <h3 align="center">🌠 lightfetch 🌠</h3>
+
+  <p align="center">
+    A small requests package for dirt simple usages. Built using <strong>zero dependencies</strong> to be <strong>lightweight</strong> and <strong>asynchronous</strong>.
+    <br />
+    <a href="#"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://www.npmjs.com/package/lightfetch-node">View Package on NPM</a>·
+    <a href="https://github.com/RayhanADev/lightfetch/issues">Report Bug</a>·
+    <a href="https://github.com/RayhanADev/lightfetch/issues">Request Feature</a>
+  </p>
+</p>
 
 ## Install
 
