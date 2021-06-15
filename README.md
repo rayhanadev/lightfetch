@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://github.com/RayhanADev/lightfetch">
-    <img src="images/lightfetch.png" alt="lightfetch-splash" width="760" height="266">
+    <img src="images/lightfetch.png" alt="lightfetch-splash" width="505" height="266">
   </a>
 
   <h3 align="center">🌠 lightfetch 🌠</h3>
