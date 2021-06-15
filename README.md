@@ -2,12 +2,12 @@
 > subject to change without warning.
 
 # 🌠 lightfetch 🌠
-A small requests package for dirt simple usages. Built using **zero dependencies** to be **lightweight**
-and **asynchronous**.
+A small requests package for dirt simple usages. None of that overcomplicated stuff.
+Built using **zero dependencies** to be **lightweight** and **asynchronous**.
 
 ## Install
 ```sh
-npm install lightfetch@latest
+npm install lightfetch-node@latest
 ```
 
 ## Usage
@@ -23,10 +23,10 @@ await lightfetch(url,[options]);
 ## Example
 ```js
 // using CommonJS
-const { lightfetch } = require('lightfetch');
+const { lightfetch } = require('lightfetch-node');
 
 // using ESM
-import { lightfetch } from 'lightfetch';
+import { lightfetch } from 'lightfetch-node';
 
 async function fetch(url) {
 	const res = await lightfetch(url, {
