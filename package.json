@@ -13,12 +13,13 @@
 	},
 	"module": "./dist/lightfetch.mjs",
 	"scripts": {
+		"test": "node tests/common.test.cjs && node tests/esm.test.mjs",
 		"test:cjs": "node tests/common.test.cjs",
 		"test:mjs": "node tests/esm.test.mjs",
 		"lint": "eslint src --config ./eslint.config.cjs --ext .js",
 		"lint:fix": "eslint src --config ./eslint.config.cjs --ext .js --fix",
-		"format": "prettier --check ./src",
-		"format:fix": "prettier --write ./src",
+		"format": "prettier --check .",
+		"format:fix": "prettier --write .",
 		"build": "rimraf ./dist/** && rollup --config",
 		"build:cjs": "rimraf ./dist/lightfetch.cjs && rollup src/index.js --file dist/lightfetch.cjs --format cjs",
 		"build:mjs": "rimraf ./dist/lightfetch.mjs && rollup src/index.js --file dist/lightfetch.mjs --format esm"

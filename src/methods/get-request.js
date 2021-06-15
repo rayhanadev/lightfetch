@@ -5,7 +5,7 @@ const getRequest = (url, headers) => {
 
 	const requestOptions = {
 		hostname: urlPieces.host,
-		port: urlPieces.port ?? 443,
+		port: urlPieces.port || 443,
 		path: urlPieces.pathname + urlPieces.search,
 		method: 'GET',
 		headers,
