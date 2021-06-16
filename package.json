@@ -12,6 +12,10 @@
 		}
 	},
 	"module": "./dist/lightfetch.mjs",
+	"files": [
+    "src",
+    "dist"
+  ],
 	"scripts": {
 		"test": "node tests/common.test.cjs && node tests/esm.test.mjs",
 		"test:cjs": "node tests/common.test.cjs",
