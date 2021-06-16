@@ -1,6 +1,6 @@
 {
 	"name": "lightfetch-node",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"description": "Zero dependencies, lightweight, and asynchronous requests package.",
 	"type": "module",
 	"main": "./dist/lightfetch.cjs",
@@ -12,7 +12,9 @@
 		}
 	},
 	"module": "./dist/lightfetch.mjs",
-	"files": [ "dist" ],
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"test": "node tests/common.test.cjs && node tests/esm.test.mjs",
 		"test:cjs": "node tests/common.test.cjs",
@@ -30,11 +32,11 @@
 		"url": "https://github.com/RayhanADev/lightfetch.git"
 	},
 	"keywords": [
-    "fetch",
-    "https",
-    "async",
-    "request"
-  ],
+		"fetch",
+		"https",
+		"async",
+		"request"
+	],
 	"author": "Ray Arayilakath <rayhanadev@pm.me> (https://rayhanadev.vercel.app)",
 	"license": "MIT",
 	"bugs": {
