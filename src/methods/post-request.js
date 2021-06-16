@@ -1,13 +1,28 @@
 import https from 'https';
 
-const getRequest = (url, headers) => {
+const postRequest = (url, headers = {}, body) => {
 	const urlPieces = new URL(url);
+	const formRegex = /^(([\w\s.])+=([\w\s.])+&?)+/;
+
+	let requestSafeBody = '';
+	if (typeof body === 'object') {
+		headers['Content-Type'] = 'application/json';
+		requestSafeBody = JSON.stringify(body);
+	} else if (typeof body === 'string' && formRegex.test(decodeURI(body))) {
+		headers['Content-Type'] = 'application/x-www-form-urlencoded';
+		requestSafeBody = body;
+	} else {
+		headers['Content-Type'] = 'text/plain';
+		requestSafeBody = body;
+	}
+
+	headers['Content-Length'] = requestSafeBody.length;
 
 	const requestOptions = {
 		hostname: urlPieces.host,
 		port: urlPieces.port || 443,
 		path: urlPieces.pathname + urlPieces.search,
-		method: 'GET',
+		method: 'POST',
 		headers,
 	};
 
@@ -47,9 +62,10 @@ const getRequest = (url, headers) => {
 			reject(error);
 		});
 
+		request.write(requestSafeBody);
 		request.end();
 	});
 	return requestPromise;
 };
 
-export default getRequest;
+export default postRequest;

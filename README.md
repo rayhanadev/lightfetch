@@ -52,14 +52,14 @@ const { lightfetch } = require('lightfetch-node');
 import { lightfetch } from 'lightfetch-node';
 
 async function fetch(url) {
-	const res = await lightfetch(url, {
-		method: 'GET',
-		headers: {
-			'X-Requested-With': 'RayhanADev',
-		},
-	});
-	console.log('Status:', res.status);
-	console.log('Response:', res.toJSON());
+  const res = await lightfetch(url, {
+    method: 'GET',
+    headers: {
+      'X-Requested-With': 'RayhanADev',
+    },
+  });
+  console.log('Status:', res.status);
+  console.log('Response:', res.toJSON());
 }
 
 fetch('https://postman-echo.com/get?foo=bar');

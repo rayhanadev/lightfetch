@@ -1,15 +1,19 @@
 import getRequest from './methods/get-request.js';
+import postRequest from './methods/post-request.js';
 
 export const lightfetch = (url, options = { method: 'GET' }) => {
 	const { method, headers, body } = options;
-	let data;
+	let requestPromise;
 	switch (method.toLowerCase()) {
 		case 'get':
-			data = getRequest(url, headers, body);
+			requestPromise = getRequest(url, headers);
+			break;
+		case 'post':
+			requestPromise = postRequest(url, headers, body);
 			break;
 		default:
-			data = getRequest(url, headers, body);
+			requestPromise = getRequest(url, headers);
 			break;
 	}
-	return data;
+	return requestPromise;
 };
