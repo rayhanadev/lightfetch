@@ -1,7 +1,7 @@
 import getRequest from './methods/get-request.js';
 import postRequest from './methods/post-request.js';
 
-export const lightfetch = (url, options = { method: 'GET' }) => {
+export const lightfetch = async (url, options = { method: 'GET' }) => {
 	const { method, headers, body } = options;
 	let requestPromise;
 	switch (method.toLowerCase()) {

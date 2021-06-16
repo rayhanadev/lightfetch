@@ -1,24 +1,22 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change. 
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
 Please note the following:
 
-- We have a code of conduct, please follow it in all your interactions with the project.
-- We use 'eslint' and 'prettier' to lint and format our code respectively. We have included scripts and configuration files to help you maintain similar code:
-  ```sh
-  $ npm run lint:fix
-  $ npm run format:fix
-  ```
-  please run these before building.
-- We use 'reollup' to bundle our ESM code to ESM and CommonJS compatible distributions. We have included scripts and configuration files to help you build similar code:
-  ```sh
-  $ npm run build
-  ```
-  please run this before submitting a pull request.
-- We follow the 'Conventional Commits' commit convention. If your pull request does not adhere to the convention, it will not be merged.
-
-
+-   We have a code of conduct, please follow it in all your interactions with the project.
+-   We use 'eslint' and 'prettier' to lint and format our code respectively. We have included scripts and configuration files to help you maintain similar code:
+    ```sh
+    $ npm run lint:fix
+    $ npm run format:fix
+    ```
+    please run these before building.
+-   We use 'reollup' to bundle our ESM code to ESM and CommonJS compatible distributions. We have included scripts and configuration files to help you build similar code:
+    ```sh
+    $ npm run build
+    ```
+    please run this before submitting a pull request.
+-   We follow the 'Conventional Commits' commit convention. If your pull request does not adhere to the convention, it will not be merged.
 
 ## Pull Request Process
 

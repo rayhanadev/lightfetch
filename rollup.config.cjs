@@ -1,5 +1,4 @@
-const { babel } = require('@rollup/plugin-babel');
-const { nodeResolve } = require('@rollup/plugin-node-resolve');
+const { builtinModules } = require('module');
 
 module.exports = {
 	input: 'src/index.js',
@@ -7,11 +6,13 @@ module.exports = {
 		{
 			file: 'dist/lightfetch.cjs',
 			format: 'cjs',
+			preferConst: true,
 		},
 		{
 			file: 'dist/lightfetch.mjs',
 			format: 'esm',
+			preferConst: true,
 		},
 	],
-	plugins: [nodeResolve(), babel({ babelHelpers: 'bundled' })],
+	external: [...builtinModules],
 };
