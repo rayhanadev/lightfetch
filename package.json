@@ -1,6 +1,6 @@
 {
 	"name": "lightfetch-node",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Zero dependencies, lightweight, and asynchronous requests package.",
 	"type": "module",
 	"main": "./dist/lightfetch.cjs",
@@ -13,9 +13,9 @@
 	},
 	"module": "./dist/lightfetch.mjs",
 	"files": [
-    "src",
-    "dist"
-  ],
+		"src",
+		"dist"
+	],
 	"scripts": {
 		"test": "node tests/common.test.cjs && node tests/esm.test.mjs",
 		"test:cjs": "node tests/common.test.cjs",
