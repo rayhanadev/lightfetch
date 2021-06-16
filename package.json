@@ -12,10 +12,7 @@
 		}
 	},
 	"module": "./dist/lightfetch.mjs",
-	"files": [
-		"src",
-		"dist"
-	],
+	"files": [ "dist" ],
 	"scripts": {
 		"test": "node tests/common.test.cjs && node tests/esm.test.mjs",
 		"test:cjs": "node tests/common.test.cjs",
@@ -32,8 +29,13 @@
 		"type": "git",
 		"url": "https://github.com/RayhanADev/lightfetch.git"
 	},
-	"keywords": [],
-	"author": "RayhanADev",
+	"keywords": [
+    "fetch",
+    "https",
+    "async",
+    "request"
+  ],
+	"author": "Ray Arayilakath <rayhanadev@pm.me> (https://rayhanadev.vercel.app)",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/RayhanADev/lightfetch/issues"
