@@ -46,7 +46,7 @@ await lightfetch(url, [options]);
 
 \* *Data that can be used in body includes an Object, a string that's 
 in x-www-form-urlencoded format, or plain text. Lightfetch will figure
-out what you pass in automagically.*
+out what you pass in automagically and set the appropriate headers.*
 
 ## Example
 
