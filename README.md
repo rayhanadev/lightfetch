@@ -9,7 +9,7 @@
   <h3 align="center">🌠 lightfetch 🌠</h3>
 
   <p align="center">
-    A small requests package for dirt simple usages. Built using <strong>zero dependencies</strong> to be <strong>lightweight</strong> and <strong>asynchronous</strong>.
+    A small requests package for super simple usages. Built using <strong>zero dependencies</strong> to be <strong>lightweight</strong> and <strong>asynchronous</strong>.
     <br />
     <a href="#"><strong>Explore the docs »</strong></a>
     <br />

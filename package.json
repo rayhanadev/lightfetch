@@ -2,8 +2,10 @@
 	"name": "lightfetch-node",
 	"version": "0.0.8",
 	"description": "Zero dependencies, lightweight, and asynchronous requests package.",
+	"sideEffects": false,
 	"type": "module",
 	"main": "./dist/lightfetch.cjs",
+	"module": "./dist/lightfetch.mjs",
 	"exports": {
 		".": {
 			"import": "./dist/lightfetch.mjs",
@@ -11,7 +13,6 @@
 			"default": "./dist/lightfetch.cjs"
 		}
 	},
-	"module": "./dist/lightfetch.mjs",
 	"files": [
 		"dist"
 	],
