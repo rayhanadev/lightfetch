@@ -1,31 +1,33 @@
 > This project is a **Work in Progress** and currently in development. The API is
 > subject to change without warning.
 
-<p align="center">
-  <a href="https://github.com/RayhanADev/lightfetch">
-    <img src="images/lightfetch.png" alt="lightfetch-splash" width="505" height="266">
-  </a>
+<div align="center">
+	<a href="https://github.com/RayhanADev/lightfetch">
+		<img src="https://github.com/RayhanADev/lightfetch/blob/master/images/lightfetch.png?raw=true" alt="Lightfetch Banner" width="900" />
+	</a>
+	<br />
+	<a href="https://github.com/RayhanADev/lightfetch/graphs/contributors"><img src="https://img.shields.io/github/contributors/RayhanADev/lightfetch.svg?style=for-the-badge"></a>
+	<a href="https://github.com/RayhanADev/lightfetch.svg/graphs/contributors"><img src="https://img.shields.io/github/forks/RayhanADev/lightfetch.svg?style=for-the-badge"></a>
+	<a href="https://github.com/RayhanADev/lightfetch/stargazers"><img src="https://img.shields.io/github/stars/RayhanADev/lightfetch.svg?style=for-the-badge"></a>
+	<a href="https://github.com/RayhanADev/lightfetch/issues"><img src="https://img.shields.io/github/issues/RayhanADev/lightfetch.svg?style=for-the-badge"></a>
+	<a href="https://github.com/RayhanADev/lightfetch/blob/master/LICENSE"><img src="https://img.shields.io/github/license/RayhanADev/lightfetch.svg?style=for-the-badge"></a>
+	<a href="https://www.npmjs.com/package/lightfetch-node"><img src="https://img.shields.io/npm/dw/lightfetch-node?style=for-the-badge"></a>
+	<p>
+		<em>A small fetching package for super simple usages.</em>
+		<br />
+		Built using <strong>zero dependencies</strong> to be <strong>lightweight</strong>
+		and <strong>asynchronous</strong>
+		<br />
+		Lightfetch gives you the best of size, speed, and usability.
+	</p>
+</div>
 
-  <h3 align="center">🌠 lightfetch 🌠</h3>
-
-  <p align="center">
-    A small requests package for super simple usages. Built using <strong>zero dependencies</strong> to be <strong>lightweight</strong> and <strong>asynchronous</strong>.
-    <br />
-    <a href="#"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://www.npmjs.com/package/lightfetch-node">View Package on NPM</a>
-		·
-    <a href="https://github.com/RayhanADev/lightfetch/issues">Report Bug</a>
-		·
-    <a href="https://github.com/RayhanADev/lightfetch/issues">Request Feature</a>
-  </p>
-</p>
+---
 
 ## Install
 
 ```sh
-npm install lightfetch-node@latest
+npm install lightfetch-node
 ```
 
 ## Usage
@@ -38,9 +40,13 @@ await lightfetch(url, [options]);
 
 ### Options
 
--   method - HTTP Request Method (currently supports "GET")
--   headers - HTTP Headers to use in Request
--   body - Data body to use in Request
+-   method: HTTP Request Method
+-   headers: HTTP Headers to use in Request
+-   body: Data to use in the Request*
+
+\* *Data that can be used in body includes an Object, a string that's 
+in x-www-form-urlencoded format, or plain text. Lightfetch will figure
+out what you pass in automagically.*
 
 ## Example
 
@@ -63,4 +69,5 @@ async function fetch(url) {
 }
 
 fetch('https://postman-echo.com/get?foo=bar');
+
 ```
