@@ -1,6 +1,6 @@
 {
 	"name": "lightfetch-node",
-	"version": "0.0.9",
+	"version": "0.1.0",
 	"description": "Zero dependencies, lightweight, and asynchronous requests package.",
 	"sideEffects": false,
 	"type": "module",
