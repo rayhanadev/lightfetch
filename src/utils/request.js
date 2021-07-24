@@ -1,11 +1,12 @@
 import { request as req } from 'https';
+import parseCookie from './cookieParser.js';
 
 const requestFunc = (method, url, headers = {}, body) => {
 	const urlPieces = new URL(url);
 	const formRegex = /^(([\w\s.])+=([\w\s.])+&?)+/;
 
 	let requestSafeBody = '';
-	if (method.toLowerCase() !== 'get') {
+	if (method.toLowerCase() !== 'get' && !headers['Content-Type']) {
 		if (typeof body === 'object') {
 			headers['Content-Type'] = 'application/json';
 			requestSafeBody = JSON.stringify(body);
@@ -43,6 +44,7 @@ const requestFunc = (method, url, headers = {}, body) => {
 			response.on('end', () => {
 				const returnable = {
 					response,
+					cookies: parseCookie(response),
 					status: response.statusCode,
 					headers: response.headers,
 					toJSON: () => {

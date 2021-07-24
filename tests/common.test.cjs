@@ -13,6 +13,7 @@ const { lightfetch } = require('../dist/lightfetch.cjs');
 	);
 	console.log('Status:', getResponse.status);
 	console.log('Response:', getResponse.toJSON());
+	console.log('Cookies:', getResponse.cookies);
 	console.log('---');
 	console.log('CommonJS Test. URL: https://postman-echo.com/post.');
 	const postResponse = await lightfetch(
@@ -27,5 +28,6 @@ const { lightfetch } = require('../dist/lightfetch.cjs');
 	);
 	console.log('Status:', postResponse.status);
 	console.log('Response:', postResponse.toJSON());
+	console.log('Cookies:', postResponse.cookies);
 	console.log('---');
 })(lightfetch);

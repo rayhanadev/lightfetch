@@ -13,6 +13,7 @@ import { lightfetch } from '../dist/lightfetch.mjs';
 	);
 	console.log('Status:', getResponse.status);
 	console.log('Response:', getResponse.toJSON());
+	console.log('Cookies:', getResponse.cookies);
 	console.log('---');
 	console.log('ESM Test. URL: https://postman-echo.com/post.');
 	const postResponse = await lightfetch(
@@ -27,5 +28,6 @@ import { lightfetch } from '../dist/lightfetch.mjs';
 	);
 	console.log('Status:', postResponse.status);
 	console.log('Response:', postResponse.toJSON());
+	console.log('Cookies:', postResponse.cookies);
 	console.log('---');
 })(lightfetch);
