@@ -58,8 +58,8 @@ The items in a response include:
 -   `<Response>.status`: The status code of a response
 -   `<Response>.headers`: The headers in a response
 -   `<Response>.cookies`: The cookies in a response (uses an API similar to [this](https://github.com/nfriedly/set-cookie-parser) internally)
--   `<Response>.toJSON`: A function to parse the content of a response to JSON
--   `<Response>.toText`: A function to parse the content of a response to text
+-   `<Response>.json`: A function to parse the content of a response to JSON
+-   `<Response>.text`: A function to parse the content of a response to text
 
 > If the above does not statisfy your needs, you can also use `<Response>.response`
 > to access the unmodified, raw response NodeJS outputs.

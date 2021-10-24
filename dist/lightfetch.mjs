@@ -113,14 +113,14 @@ const requestFunc = (method, url, headers = {}, body) => {
 						...response.headers,
 						get: (header) => response.headers[header.toLowerCase()],
 					},
-					toJSON: () => {
+					json: () => {
 						try {
 							return JSON.parse(responseData);
 						} catch (error) {
 							throw new Error(error);
 						}
 					},
-					toText: () => {
+					text: () => {
 						try {
 							return responseData;
 						} catch (error) {
