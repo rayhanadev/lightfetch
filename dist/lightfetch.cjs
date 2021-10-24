@@ -113,7 +113,10 @@ const requestFunc = (method, url, headers = {}, body) => {
 					response,
 					cookies: parseCookie(response),
 					status: response.statusCode,
-					headers: response.headers,
+					headers: {
+						...response.headers,
+						get: (header) => response.headers[header.toLowerCase()],
+					},
 					toJSON: () => {
 						try {
 							return JSON.parse(responseData);

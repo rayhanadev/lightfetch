@@ -38,6 +38,7 @@ npm install lightfetch-node
 ```js
 await lightfetch(url, [options]);
 ```
+
 which returns a [`<Response>`](#response)
 
 ### Options
@@ -51,16 +52,17 @@ in x-www-form-urlencoded format, or plain text. Lightfetch will figure
 out what you pass in automagically and set the appropriate headers._
 
 ### Response
+
 The items in a response include:
-- `<Response>.status`: The status code of a response
-- `<Response>.headers`: The headers in a response
-- `<Response>.cookies`: The cookies in a response (uses an API similar to [this](https://github.com/nfriedly/set-cookie-parser) internally)
-- `<Response>.toJSON`: A function to parse the content of a response to JSON
-- `<Response>.toText`: A function to parse the content of a response to text
+
+-   `<Response>.status`: The status code of a response
+-   `<Response>.headers`: The headers in a response
+-   `<Response>.cookies`: The cookies in a response (uses an API similar to [this](https://github.com/nfriedly/set-cookie-parser) internally)
+-   `<Response>.toJSON`: A function to parse the content of a response to JSON
+-   `<Response>.toText`: A function to parse the content of a response to text
 
 > If the above does not statisfy your needs, you can also use `<Response>.response`
 > to access the unmodified, raw response NodeJS outputs.
-
 
 ## Example
 
@@ -85,4 +87,3 @@ async function fetch(url) {
 
 fetch('https://postman-echo.com/get?foo=bar');
 ```
-
